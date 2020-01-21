@@ -1,14 +1,12 @@
 
 const mysql = require('mysql');
 const connection = mysql.createConnection({
-	/*optional fields*/
-//	host:'127.0.0.1',
-// 	port: 3308,
-//  multipleStatements: true,
-	/*Mandatory fields*/
+	host:'127.0.0.1',
+	port: 3306,
 	user : 'root',
 	password: 'root',
-	database: 'intranet'
+	database: 'intranet',
+	multipleStatements: true
 });
 
 connection.connect((err)=>{
